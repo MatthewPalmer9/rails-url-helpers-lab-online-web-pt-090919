@@ -1,0 +1,10 @@
+<% while @student.active%>
+  <% if @student.active = true %>
+    <% @student.active = false %>
+  <% end %>
+  
+  <% if @student.active
+  <% @student.active = true %>
+<% end %>
+
+<%= @student.active %>
