@@ -1,9 +1,8 @@
 Was : <%= @student.active %>
-<% if @student.active == true %>
-  <% @student.active = false %>
-<% elsif @student.active == false %>
-  <% @student.active = true %>
-  <%= @student.active %>
+<% if @student.active %>
+  <% @student.active = !@student.active %>
 <% end %>
 
-<%= @student.active %>
+<p></p>
+
+Now : <%= @student.active %>
