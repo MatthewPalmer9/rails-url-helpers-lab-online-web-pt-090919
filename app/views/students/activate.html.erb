@@ -1,10 +1,7 @@
-<% while @student.active%>
-  <% if @student.active = true %>
-    <% @student.active = false %>
-  <% end %>
-  
-  <% if @student.active
-  <% @student.active = true %>
-<% end %>
-
-<%= @student.active %>
+<% if @student.active == true %>
+      <% @student.active = false %>
+      <% @student.save %>
+    <% elsif @student.active == false %>
+      <% @student.active = true %>
+    <% end %>
+    <%= @student.active %>
