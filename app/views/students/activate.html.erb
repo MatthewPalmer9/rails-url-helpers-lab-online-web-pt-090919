@@ -3,7 +3,7 @@ Was : <%= @student.active %>
   <% @student.active = false %>
 <% elsif @student.active == false %>
   <% @student.active = true %>
-  <% @student.active %>
+  <%= @student.active %>
 <% end %>
 
 <%= @student.active %>
