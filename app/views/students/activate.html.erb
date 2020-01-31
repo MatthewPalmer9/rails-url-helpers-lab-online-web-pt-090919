@@ -1,7 +1,8 @@
 <% if @student.active == true %>
-      <% @student.active = false %>
-      <% @student.save %>
-    <% elsif @student.active == false %>
-      <% @student.active = true %>
-    <% end %>
-    <%= @student.active %>
+  <% @student.active = false %>
+  <% @student.save %>
+<% elsif @student.active == false %>
+  <% @student.active = true %>
+<% end %>
+
+<%= @student.active %>
